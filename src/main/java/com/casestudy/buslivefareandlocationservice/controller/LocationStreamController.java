@@ -31,7 +31,7 @@ public class LocationStreamController {
                                 LocationResponse.builder()
                                         .id(new Random().nextInt(100))
                                         .location(LocationDto.builder()
-                                                .lat(new Random().nextInt(180))
+                                                .lat(new Random().nextInt(90))
                                                 .lng(new Random().nextInt(180))
                                                 .build())
                                         .build()

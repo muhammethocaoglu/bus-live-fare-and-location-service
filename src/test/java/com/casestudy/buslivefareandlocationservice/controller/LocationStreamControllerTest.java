@@ -1,6 +1,5 @@
 package com.casestudy.buslivefareandlocationservice.controller;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.reactive.WebFluxTest;
@@ -15,8 +14,6 @@ public class LocationStreamControllerTest {
 
     @Autowired
     private WebTestClient webClient;
-    @Autowired
-    private ObjectMapper objectMapper;
 
     @Test
     void test_should_return_location_stream_when_retrieve() {
