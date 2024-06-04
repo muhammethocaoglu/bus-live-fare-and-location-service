@@ -11,8 +11,8 @@ import org.springframework.web.reactive.result.method.annotation.ResponseEntityE
 public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
     @ExceptionHandler(Exception.class)
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
-    public String serverExceptionHandler(Exception ex) {
-        return ex.getMessage();
+    public ErrorMessage serverExceptionHandler(Exception ex) {
+        return ErrorMessage.builder().error(ex.getMessage()).build();
     }
 
 
