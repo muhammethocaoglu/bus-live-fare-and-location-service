@@ -8,6 +8,6 @@ import lombok.*;
 @NoArgsConstructor
 @Builder
 public class BusFareResponse {
-    private int id;
+    private Integer id;
     private Integer fare;
 }
